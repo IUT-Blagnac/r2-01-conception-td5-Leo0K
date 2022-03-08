@@ -1,0 +1,20 @@
+@startuml
+
+usecase r as "Gérer ses chantiers"
+usecase d as "Gérer ses artisans"
+usecase e as "Gérer la paye"
+usecase g as "Gérer quels artisans sont afféctés à quels chantiers"
+
+actor Entreprise 
+
+'Pour aligner les 2 acteurs :
+'r -[hidden]-> d
+'d -[hidden]-> e
+
+
+Entreprise --> d
+Entreprise --> r
+Entreprise --> e
+Entreprise --> g
+
+@enduml
